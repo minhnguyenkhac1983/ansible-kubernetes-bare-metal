@@ -33,6 +33,7 @@ $ ssh-copy-id <The remote username>@<The IPv4 address of the remote machine>
 ```
 
 ## Usage
+0. Link fix https://kubernetes.io/blog/2023/08/15/pkgs-k8s-io-introduction/
 
 1. Clone this Git repository to your local working station:
 ```
@@ -56,5 +57,5 @@ $ nano inventory/hosts.ini
 
 5. Run the Ansible Playbook:
 ```
-$ ansible-playbook -i inventory/hosts.ini -K playbooks/cluster.yaml
+$ ansible-playbook -i inventory/hosts.ini -K playbooks/cluster.yaml -v
 ```
